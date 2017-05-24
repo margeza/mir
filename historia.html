@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8"/>
+        <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+        <title>MiR - monitoruj i reaguj na zdarzenia</title>
+        <meta name="description" content="Strona do podglądu zdarzeń rejestrowanych przez system MiR."/>
+        <meta name="keywords" content="monitoruj, reaguj, MiR"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="author" content="Marta Gęza"/>
+
+        <link rel="stylesheet" href="css/fontello.css" type="text/css"/>
+        <link href="font-josefin-sans.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="Chart.js"></script>
+        <script type="text/javascript" src="script_historia.js"></script>
+        <script type="text/javascript" src="script_logout.js"></script>
+    </head>
+
+    <body>
+        <i class="icon-off" onclick="logout()"></i>
+        <div id="container">
+
+            <div id="logo">
+                <h1>MiR <br/>Monitoruj i reaguj na zdarzenia</h1>
+            </div>
+
+            <a href="index.html" class="linkhtml5"><div class="menu"><i class="icon-home"></i><br/>Strona główna</div></a>
+            <a href="historia.html" class="linkhtml5"><div class="menu" id="srodek"><i class="icon-calendar"></i><br/>Historia</div></a>
+            <a href="konto.html" class="linkhtml5"><div class="menu" id="srodek"><i class="icon-cog-alt"></i><br/>Konto</div></a>
+            <a href="kontakt.html" class="linkhtml5"><div class="menu" id="srodek"><i class="icon-mail"></i><br/>Kontakt</div></a>
+
+
+            <div id="content"> 
+
+                <div class="oddo">Od: </div> 
+                <input class="dane_kalendarz" id="dateFrom" type="date"  max="new Date()">
+                <div class="oddo"> godzina: </div>
+                <input class="dane_godzina" id="timeFrom" type="time">
+
+                <div class="oddo">do: </div>
+                <input class="dane_kalendarz" id="dateTo" type="date" max="new Date()">
+                <div class="oddo"> godzina: </div>
+                <input class="dane_godzina" id="timeTo" type="time">
+
+                <button id="button_szukaj" type="submit" onclick="findInHistory()" > Szukaj <i class="icon-search"></i> </button>
+                <div style="clear:both;"></div>
+
+                <div id="showChart" class="hidden">
+                    <div style="height: 50px;"></div>
+                    <div id="chart"><canvas id="myChart"></canvas></div>
+                    <script src="Chart.js"></script>
+                    <script src="script_historia.js"></script>
+                </div>
+                <div style="height: 50px;"></div>
+                <table class="tabela tabelaKrytyczna hidden" id="showTable">
+                    <thead>
+                        <tr>
+                            <th>Parametr</th>
+                            <th id="actualDateTime">Gaz</th>
+                            <th id="previousDateTime">Drzwi</th>
+                            <th id="previousDateTime">Zalanie</th>
+                            <th id="previousDateTime">Uzbrojenie</th>
+                            <th id="previousDateTime">Rozbrojenie</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id= "excelDataTable">   
+
+                    </tbody>
+                </table>			
+
+            </div>
+
+            <div id="footer">
+                <p>MiR - monitoruj i reaguj na zdarzenia &copy; Wszelkie prawa zastrzeżone <br/> ul. Abcdefg 12, Miasto | Tel: +(48) 799 449 165</p>
+            </div>
+
+        </div>
+
+    </body>
+</html>

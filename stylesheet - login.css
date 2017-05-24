@@ -1,0 +1,112 @@
+*
+{
+   color: white;
+   font-family: 'Josefin Sans', sans-serif;
+}
+body 
+{
+    background-color: #303030;
+}
+
+#container
+{
+    width: 400px;
+	height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 100px;
+}
+
+#logo
+{
+    position: relative;
+    background-color: #666666;
+    text-align: center;
+	padding: 10px;
+	font-size: 27px;
+	margin-bottom: 10px;
+}
+
+#zapomniales_hasla
+{
+	margin-right: 75px;
+	color: black;
+	float: right;
+	font-size: 15px;
+	cursor:pointer;
+}
+
+#zapomniales_hasla:hover
+{
+	color: white;
+}
+
+#pusty
+{
+	height: 80px;
+	text-align: center;
+}
+
+#button
+{
+	font-size: 30px;
+	text-align: center;
+	margin-left: 110px;
+	background-color: #0062a0;
+	color: #ffffff;
+	width: 180px;
+	clear: both;
+	padding-bottom: 5px;
+	vertical-align: text-top;
+	cursor:pointer;
+	border: none;
+	margin-top: 35px;
+}
+
+#button:hover
+{
+	background-color: #005190;
+}
+
+.dane
+{
+	background-color: #ffffff;
+	width: 250px;
+	height: 25px;
+	margin: 10px;
+	margin-left: 70px;
+	margin-right: 70px;
+	color: black;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: none;
+	font-size: 17px;
+}
+
+#okno_log
+{
+	height: 330px;
+	background-color: #3095d3;
+}
+
+#footer
+{
+	clear: both;
+	font-size: 14px;
+	text-align: center;
+	color: #ffffff;
+	margin: 10px;
+	margin-top: -20px;
+}
+
+a.linkhtml5
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+.hidden {
+	display:none;
+}

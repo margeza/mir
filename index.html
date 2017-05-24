@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+        <meta charset="utf-8"/>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>MiR - monitoruj i reaguj na zdarzenia</title>
+        <meta name="description" content="Strona do podglądu zdarzeń rejestrowanych przez system MiR."/>
+        <meta name="keywords" content="monitoruj, reaguj, MiR"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="author" content="Marta Gęza"/>
+
+		<link rel="stylesheet" href="css/fontello.css" type="text/css"/>
+		<link href="font-josefin-sans.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="script_index.js"></script>
+		<script type="text/javascript" src="script_logout.js"></script>
+	</head>
+    
+	<body>
+		<i class="icon-off" onclick="logout()"></i>
+        <div id="container">
+			
+            <div id="logo">
+                <h1>MiR <br/>Monitoruj i reaguj na zdarzenia</h1>
+            </div>
+            
+            <a href="index.html" class="linkhtml5"><div class="menu"><i class="icon-home"></i><br/>Strona główna</div></a>
+            <a href="historia.html" class="linkhtml5"><div class="menu" id="srodek"><i class="icon-calendar"></i><br/>Historia</div></a>
+            <a href="konto.html" class="linkhtml5"><div class="menu" id="srodek"><i class="icon-cog-alt"></i><br/>Konto</div></a>
+            <a href="kontakt.html" class="linkhtml5"><div class="menu" id="srodek"><i class="icon-mail"></i><br/>Kontakt</div></a>
+            
+            
+            <div id="content"> 
+            
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Parametr</th>
+                            <th id="actualDateTime"></th>
+                            <th id="previousDateTime"></th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td><p>Temperatura</p></td>
+                            <td id="actualTemp"></td>  
+                            <td id="previousTemp"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><p>Wilgotność</p></td>
+                            <td id="actualHumidity"></td>
+                            <td id="previousHumidity"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><p>Drzwi</p></td>
+                            <td id="actualOpening"></td>
+                            <td id="previousOpening"></td>
+                        </tr>
+                        
+                         <tr>
+                            <td><p>Zalanie</p></td>
+                            <td id="actualFlooding"></td>
+                            <td id="previousFlooding"></td>
+                        </tr>
+                        
+                         <tr>
+                            <td><p>Gaz</p></td>
+                            <td id="actualGasDetection"></td>
+                            <td id="previousGasDetection"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+            </div>
+            
+            <div id="footer">
+                <p>MiR - monitoruj i reaguj na zdarzenia &copy; Wszelkie prawa zastrzeżone <br/> ul. Abcdefg 12, Miasto | Tel: +(48) 799 449 165</p>
+            </div>
+            
+        </div>
+		
+	</body>
+</html>

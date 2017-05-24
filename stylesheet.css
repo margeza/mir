@@ -1,0 +1,390 @@
+*
+{
+   color: white;
+   font-family: 'Josefin Sans', sans-serif;
+}
+body 
+{
+    background-color: #303030;
+}
+
+#container
+{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo
+{
+    position: relative;
+    background-color: #666666;
+    text-align: center;
+	margin:10px;
+	padding: 5px;
+}
+
+.menu
+{
+   position: relative;
+   float: left; 
+   background-color: #3095d3;
+   padding: 10px;
+   border-radius: 5px;
+   margin-bottom: -10px;
+   margin-top:50px;
+   text-align: center;
+   width: 140px;
+   height: 50px;
+   margin: 10px;
+}
+
+.menu:hover
+{
+	background-color: #2084c2;
+}
+
+#srodek
+{
+	margin-left: 103px;
+}
+
+#content
+{
+   position: relative;
+   height: 100%;
+   width: 940px;
+   clear: both;
+   padding: 20px;
+   background-color: #3095d3;
+   margin: 10px;
+}
+
+td 
+{
+    text-align:center;
+}
+
+td p
+{
+    text-align: center;
+}
+
+
+
+#footer {
+	position: relative;
+	height: 70px;
+	background-color: #666666;
+	clear: both;
+	font-size: 14px;
+	text-align: center;
+	color: #ffffff;
+	margin: 10px;
+}
+
+#footer p {
+	position: relative;
+	padding-top: 15px;
+}
+
+.tabela
+{
+	width: 950px;
+	border-collapse: collapse;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+table.tabela thead tr
+{
+	border-bottom: 2px solid white;
+	font-size: 25px;
+}
+
+
+table.tabela.tabelaKrytyczna thead tr th:first-child
+{
+	width: 20%;
+	padding: 5px;
+}
+table.tabela thead tr th:first-child
+{
+	width: 25%;
+	padding: 5px;
+}
+
+table.tabela.tabelaKrytyczna thead tr th:not(:first-child)
+{
+	width: 17%;
+	padding: 5px;
+	border-left: 2px solid white;
+}
+table.tabela thead tr th:not(:first-child)
+{
+	width: 25%;
+	padding: 5px;
+	border-left: 2px solid white;
+}
+
+table.tabela tbody tr td:first-child
+{
+	 padding:5px;
+	 text-align: center;
+}
+
+table.tabela tbody tr td:not(:first-child)
+{
+	padding: 5px;
+	border-left: 2px solid white;
+}
+
+#kontakt
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	height: 200px;
+	background-color: #0062a0;
+	text-align: center;
+	padding-top: 50px;
+}
+
+#tresc
+{
+	text-align: center;
+	height: 300px;
+	font-size: 20px;
+	padding: 10px;
+}
+
+.dane
+{
+	background-color: #ffffff;
+	width: 250px;
+	height: 25px;
+	margin: 10px;
+	color: black;
+	padding-left: 5px;
+	padding-top: 5px;
+	font-size: 15px;
+	border: none;
+}
+
+.napis-pogrubiony
+{
+	font-size: 30px;
+	clear: both;
+}
+
+.napis-zwykly
+{
+	font-size: 23px;
+	clear: both;
+}
+
+.napis
+{
+	font-size: 17px;
+}
+
+.square1
+{
+	width: 60%;
+	float: left;
+}
+
+.square2
+{
+	width: 30%;
+	float: left;
+	margin-left:70px;
+}
+
+.kolo
+{
+	position: relative;
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	margin-left: 5px;
+	margin-top: 5px;
+	text-align: center;
+	background-color: #0062a0;
+	cursor:pointer;
+}
+
+.kolo_klik
+{
+	position: relative;
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	margin-left: 5px;
+	margin-top: 5px;
+	text-align: center;
+	background-color: #004080;
+	cursor:pointer;
+	font-weight: bold;
+}
+
+.kolo p {
+	position: relative;
+	margin-top: 40px;
+	font-size: 13px;
+}
+
+.kolo_klik p {
+	position: relative;
+	margin-top: 40px;
+	font-size: 13px;
+}
+
+.dane_powiadomienia
+{
+	background-color: #ffffff;
+	width: 40px;
+	height: 25px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	color: black;
+	padding-left: 5px;
+	padding-top: 5px;
+	font-size: 15px;
+	float: left;
+	border: none;
+}
+
+.oddo
+{
+	float: left;
+	text-align: center;
+	padding-top: 15px;
+	border: none;
+	font-size: 14.5px;
+}
+
+.button
+{
+	font-size: 20px;
+	text-align: center;
+	background-color: #0062a0;
+	width: 120px;
+	clear: both;
+	float: right;
+	padding-bottom: 5px;
+	vertical-align: text-top;
+	margin-right: 20px;
+	border: none;
+	cursor:pointer;
+}
+
+.button:hover
+{
+	background-color: #005190;
+}
+
+.kolo:hover
+{
+	background-color: #005190;
+}
+
+#button_szukaj
+{
+	font-size: 20px;
+	text-align: center;
+	background-color: #0062a0;
+	width: 120px;
+	float: left;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	vertical-align: text-top;
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-left: 10px;
+	border: none;
+    cursor:pointer;
+}
+
+#button_szukaj:hover
+{
+	background-color: #005190;
+}
+
+#chart
+{
+	background-color: #ffffff;
+}
+
+.dane_kalendarz
+{
+	background-color: #ffffff;
+	width: 180px;
+	height: 25px;
+	margin: 10px;
+	color: black;
+	padding-left: 5px;
+	padding-top: 5px;
+	font-size: 17px;
+	float: left;
+	border: none;
+}
+
+.dane_godzina
+{
+	background-color: #ffffff;
+	width: 85px;
+	height: 25px;
+	margin: 10px;
+	color: black;
+	padding-left: 5px;
+	padding-top: 5px;
+	font-size: 17px;
+	float: left;
+	border: none;
+}
+
+a.linkhtml5
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.hidden {
+	display:none;
+}
+
+
+
+/* 
+*   Tooltip
+*/
+
+.tooltip {
+    /*position: relative;*/
+    /*display: inline-block;*/
+    border-bottom: 1px dotted black;
+}
+
+.tooltip + .tooltiptext {
+    visibility: hidden;
+    /*width: 120px;*/
+    padding: 2px 5px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover + .tooltiptext {
+    visibility: visible;
+}

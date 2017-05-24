@@ -1,0 +1,19 @@
+{
+  "actual" : {
+      "date" : 1476217639000,
+      "TEMPERATURE": 22.0,
+      "HUMIDITY" : 67,
+      "SMOKE" : false,
+      "DOOR_OPEN" : false,
+      "FLOOD" : [ 1476214358000 ]
+
+  },
+  "previous" : {
+      "date": 1476217658000,
+      "TEMPERATURE": 21.5,
+      "HUMIDITY" : 66,
+      "SMOKE" : false,
+      "DOOR_OPEN" : [ 1476214358000, 1476214358000 ],
+      "FLOOD" : false
+  }
+}

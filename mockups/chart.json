@@ -1,0 +1,55 @@
+[{
+        "date": 1476217639000,
+        "TEMPERATURE": 22.5,
+        "HUMIDITY": 44
+
+    }, {
+        "date": 1476217658000,
+        "TEMPERATURE": 21.5,
+        "HUMIDITY": 46
+    },
+    {
+        "date": 1476217658000,
+        "TEMPERATURE": 22.0,
+        "HUMIDITY": 45
+    },
+    {
+        "date": 1476217658000,
+        "TEMPERATURE": 21.0,
+        "HUMIDITY": 50
+    },
+    {
+        "date": 1476217658000,
+        "TEMPERATURE": 21.5,
+        "HUMIDITY": 51
+    },
+    {
+        "date": 1476217658000,
+        "TEMPERATURE": 23.0,
+        "HUMIDITY": 51
+    },
+    {
+        "date": 1476217658000,
+        "TEMPERATURE": 22.0,
+        "HUMIDITY": 54
+    },
+    {
+        "date": 1476217658000,
+        "TEMPERATURE": 21.5,
+        "HUMIDITY": 53
+    },
+    {
+        "date": 1476217658000,
+        "TEMPERATURE": 24.0,
+        "HUMIDITY": 52
+    },
+    {
+        "date": 1476217658000,
+        "TEMPERATURE": 20.0,
+        "HUMIDITY": 49
+    },
+    {
+        "date": 1476217658000,
+        "TEMPERATURE": 22.0,
+        "HUMIDITY": 43
+    }]

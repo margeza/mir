@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+	
+		<title>MiR - monitoruj i reaguj na zdarzenia</title>
+        
+		<meta charset="utf-8"/>
+		<meta name="description" content="Strona do podglądu zdarzeń rejestrowanych przez system MiR."/>
+        <meta name="keywords" content="monitoruj, reaguj, MiR"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="author" content="Marta Gęza"/>
+		
+		<link type="text/css" rel="stylesheet" href="stylesheet - login.css"/>
+		<link rel="stylesheet" href="css/fontello.css" type="text/css"/>
+		<link href="font-josefin-sans.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="script_login.js"></script>
+	</head>'
+    
+	<body onload="fokus('Login_loguj');">
+	
+		<div id="container">
+			<div id="logo">MiR<br/>Monitoruj i reaguj na zdarzenia</div>
+			<div id="okno_log">
+				<div id="loguj" class="">
+					<div id="pusty"><i class="icon-cog"></i><br/></div>
+					<input class="dane" id="Login_loguj" type="text" placeholder="Login" tabindex="1" />
+					<input class="dane" id="Password" type="password" placeholder="Hasło" tabindex="2"/>
+					<div id="zapomniales_hasla" onclick="setLogin(false)">Zapomniałeś hasła?</div>
+					<button id="button" type="submit" tabindex="3" onclick="sendDataLog()">Zaloguj <i class="icon-right"></i></button>
+				</div>
+				
+				<div id="resetuj" class="hidden">
+					<div id="pusty"><i class="icon-cancel-circled2"></i><br/></div>
+						<input class="dane" id="Login_resetuj" type="text" placeholder="Login" tabindex="1" />
+						<input class="dane" id="E-mail" type="email" placeholder="E-mail" tabindex="2"/>
+					<div id="zapomniales_hasla" onclick="setLogin(true)">Pamiętasz hasło?</div>
+					<button id="button" type="submit" tabindex="3" onclick="sendDataReset()">Wyślij <i class="icon-right"></i></button>
+				</div>
+				<div id="pusty"></div>
+				<div id="footer">MiR - monitoruj i reaguj na zdarzenia <br/>&copy; Wszelkie prawa zastrzeżone</div>
+			</div>
+			
+			
+		</div>
+		
+	</body>
+</html>

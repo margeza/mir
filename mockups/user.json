@@ -1,0 +1,27 @@
+{
+  "firtName" : "Paweł",
+  "lastName" : "Syty",
+  "phone" : "+50 400 70 21",
+  "mail" : "pawsyty@mif.pg.gda.pl",
+  "allows" : {
+      "TEMPERATURE": true,
+      "HUMIDITY" : true,
+      "SMOKE" : false,
+      "DOOR_OPEN" : false,
+      "FLOOD" : true
+  },
+  "controlData" : {
+      "TEMPERATURE": {
+          "min" : 18,
+          "max" : 26.5
+        },
+      "HUMIDITY" : {
+          "min" : 25,
+          "max" : 70
+        }
+  },
+  "informMethod" : {
+      "PHONE": true,
+      "MAIL" : false
+  }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+        <meta charset="utf-8"/>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>MiR - monitoruj i reaguj na zdarzenia</title>
+        <meta name="description" content="Strona do podglądu zdarzeń rejestrowanych przez system MiR."/>
+        <meta name="keywords" content="monitoruj, reaguj, MiR"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="author" content="Marta Gęza"/>
+
+		<link rel="stylesheet" href="css/fontello.css" type="text/css"/>
+		<link href="font-josefin-sans.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="script_konto.js"></script>
+		<script type="text/javascript" src="script_logout.js"></script>
+	</head>
+    
+	<body>
+		<i class="icon-off" onclick="logout()"></i>
+        <div id="container">
+			
+            <div id="logo">
+                <h1>MiR <br/>Monitoruj i reaguj na zdarzenia</h1>
+            </div>
+            
+            <a href="index.html" class="linkhtml5"><div class="menu"><i class="icon-home"></i><br/>Strona główna</div></a>
+            <a href="historia.html" class="linkhtml5"><div class="menu" id="srodek"><i class="icon-calendar"></i><br/>Historia</div></a>
+            <a href="konto.html" class="linkhtml5"><div class="menu" id="srodek"><i class="icon-cog-alt"></i><br/>Konto</div></a>
+            <a href="kontakt.html" class="linkhtml5"><div class="menu" id="srodek"><i class="icon-mail"></i><br/>Kontakt</div></a>
+            
+            
+            <div id="content"> 
+            
+                <div class="square1">
+					<div class="napis-pogrubiony"><b>Dane osobowe i konfiguracja powiadomień:</b></div><br/>
+					
+					
+					<div class="napis">Imię: </div><input class="dane" id="name" type="text" tabindex="1" />
+					<div class="napis">Nazwisko: </div><input class="dane" id="surname" type="text" tabindex="2" />
+					<div class="napis">Telefon: </div><input class="dane" id="phoneNumber" type="number" tabindex="3"/>
+					<div class="napis">E-mail: </div><input class="dane" id="e-mail" type="email" tabindex="4"/><br/>
+				
+					<div class="napis-zwykly">Chcę otrzymywać powiadomienia o:</div><br/>
+					<div style="clear:both;"></div>
+					<div class="kolo" id="powiadomienieTemp" onclick="kolo_klik('powiadomienieTemp')" ><p>Temperaturze</p></div>
+					<div class="kolo" id="powiadomienieWilg" onclick="kolo_klik('powiadomienieWilg')" ><p>Wilgotności</p></div>
+					<div class="kolo" id="powiadomienieZal" onclick="kolo_klik('powiadomienieZal')" ><p>Zalaniu pokoju</p></div>
+					<div class="kolo" id="powiadomienieDrzwi" onclick="kolo_klik('powiadomienieDrzwi')" ><p>Otwarciu drzwi</p></div>
+					<div class="kolo" id="powiadomienieGaz" onclick="kolo_klik('powiadomienieGaz')" ><p>Wykryciu gazu</p></div>
+					<div style="clear:both;"></div>
+					<br/><br/>
+					<div class="napis-zwykly">Kiedy powiadomić Cię o przekroczeniu stanu krytycznego?</div><br/>
+					<div class="napis">Temperatura: </div>
+						<div class="oddo">Od </div> 
+						<input class="dane_powiadomienia" id="kontrolneTempOd" type="number" tabindex="5"/>
+						<div class="oddo">&degC do </div>
+						<input class="dane_powiadomienia" id="kontrolneTempDo" type="number" tabindex="6"/>
+						<div class="oddo">&degC </div>
+						<div style="clear:both;"></div>
+						<br/>
+						<div class="napis">Wilgotność: </div>
+						<div class="oddo">Od </div>
+						<input class="dane_powiadomienia" id="kontrolneWilgOd" type="number" tabindex="7"/>
+						<div class="oddo">% do </div>
+						<input class="dane_powiadomienia" id="kontrolneWilgDo" type="number" tabindex="8"/>
+						<div class="oddo">% </div>
+						<div style="clear:both;"></div><br/><br/>
+						
+						<div class="napis-zwykly">Gdzie chcesz otrzymywać powiadomienia?</div><br/>
+						<div class="kolo" id="gdziePowiadomienieTel" onclick="kolo_klik('gdziePowiadomienieTel')" ><p>Telefon</p></div>
+						<div class="kolo" id="gdziePowiadomienieMail" onclick="kolo_klik('gdziePowiadomienieMail')" ><p>E-mail</p></div>
+						<div style="clear:both;"></div>
+						<input class="button" type="submit" onclick="sendData()" value="Zapisz" tabindex="10"/>
+				</div>
+				<div class="square2">
+					<div class="napis-pogrubiony"><b>Zmiana hasła:</b></div><br/>
+					<div class="napis">Stare hasło: </div><input class="dane" type="password" id = "oldPassword" tabindex="11"/>
+					<div class="napis">Nowe hasło: </div><input class="dane" type="password" id = "newPassword1" tabindex="12"/>
+					<div class="napis">Powtórzone nowe hasło: </div><input class="dane" type="password" id = "newPassword2" tabindex="13"/>
+					<input class="button" type="submit" onclick="sendNewPassword()"  value="Zapisz hasło" tabindex="14"/>
+				</div>
+				<div style="clear:both;"></div>
+            
+            </div>
+            
+            <div id="footer">
+                <p>MiR - monitoruj i reaguj na zdarzenia &copy; Wszelkie prawa zastrzeżone <br/> ul. Abcdefg 12, Miasto | Tel: +(48) 799 449 165</p>
+            </div>
+            
+        </div>
+		
+	</body>
+</html>

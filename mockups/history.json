@@ -1,0 +1,20 @@
+[{
+      "date" : 1476217639000,
+      "eventType" : "SMOKE"
+  },
+  {
+      "date": 1476217658000,
+      "eventType" : "FLOOD"
+  },
+  {
+      "date": 1476217658000,
+      "eventType" : "DOOR_OPEN"
+  },
+  {
+      "date": 1476217658000,
+      "eventType" : "FLOOD"
+  },
+  {
+      "date": 1476217658000,
+      "eventType" : "FLOOD"
+  }]
