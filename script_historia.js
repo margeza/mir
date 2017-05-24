@@ -144,7 +144,7 @@ function viewTheTable(selector, dataHistory) {
 
     var xhttp = new XMLHttpRequest();
     //xhttp.open("GET", "/mockups/history.json" + dataHistory, true);
-    xhttp.open("GET", "/mockups/history.json", true);
+    xhttp.open("GET", "/mir/mockups/history.json", true);
     
 	xhttp.send(null);
 
@@ -182,7 +182,7 @@ function tabliceDanych(myList) {
 function pobierzdane(dataHistory) {
     var xhttp = new XMLHttpRequest();
     //xhttp.open("GET", "/mockups/chart.json" + dataHistory, true);
-    xhttp.open("GET", "/mockups/chart.json", true);
+    xhttp.open("GET", "/mir/mockups/chart.json", true);
 	xhttp.send(null);
 
     xhttp.onreadystatechange = function ()
